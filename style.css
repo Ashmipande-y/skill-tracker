@@ -1,0 +1,69 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem;
+  }
+  
+  .tracker-container {
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .form-control, .form-select, .list-group-item {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb;
+  }
+  
+  .list-group-item {
+    border-color: #333;
+  }
+  
+  .btn-custom {
+    background-color: #6c5ce7;
+    color: white;
+  }
+  
+  .btn-custom:hover {
+    background-color: #5a4bcf;
+  }
+  
+  .btn-info {
+    background-color: #00cec9;
+    color: black;
+  }
+  
+  .btn-info:hover {
+    background-color: #00b6b5;
+  }
+  
+  .btn-danger {
+    background-color: #d63031;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .form-label i {
+    margin-right: 5px;
+    color: #81ecec;
+  }
+  
+  #jobPrediction {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .no-skills {
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 1rem;
+  }
+  

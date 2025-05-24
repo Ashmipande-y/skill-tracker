@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container tracker-container">
+    <h1 class="text-center mb-4"><i class="fas fa-laptop-code"></i> Skill Tracker</h1>
+
+    <div class="mb-3">
+      <label for="skillType" class="form-label"><i class="fas fa-tags"></i> Select Category</label>
+      <select class="form-select" id="skillType">
+        
+        <option value="Subject">Subject</option>
+        <option value="Tool">Tool</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="presetSkills" class="form-label"><i class="fas fa-lightbulb"></i> Choose Skills</label>
+      <select class="form-select" id="presetSkills" multiple>
+        <option value="Python">Python</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+        <option value="DBMS">DBMS</option>
+        <option value="Git">Git</option>
+        <option value="GitHub">GitHub</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" id="skillInput" class="form-control" placeholder="Enter skill/topic (e.g., Java, DBMS, Git)">
+      <button class="btn btn-custom" id="addBtn"><i class="fas fa-plus"></i> Add Skill</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="filterType" class="form-label"><i class="fas fa-filter"></i> Filter by Category</label>
+      <select class="form-select" id="filterType">
+        <option value="All">All</option>
+        <option value="Programming Language">Programming Language</option>
+        <option value="Subject">Subject</option>
+        <option value="Tool">Tool</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search skill name...">
+    </div>
+
+    <ul class="list-group" id="skillList"></ul>
+    <div class="no-skills" id="noSkillsMessage" style="display: none;">No skills found. Try adding or searching something else.</div>
+
+    <div class="text-center mt-3">
+      <button class="btn btn-danger" id="resetBtn"><i class="fas fa-trash-alt"></i> Reset Skills</button>
+    </div>
+
+    <div id="jobPrediction" class="text-warning"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
